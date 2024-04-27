@@ -1,4 +1,4 @@
-У тебя есть датасет для ранжирования intern_task.csv (тут).
+У тебя есть датасет для ранжирования intern_task.csv (https://drive.google.com/file/d/1viFKqtYTtTiP9_EdBXVpCmWbNmxDiXWG/view?usp=sharing).
 В нем есть query_id - айдишник поисковой сессии, фичи
 релевантности документа запросу, rank - оценка релевантности.
 Твоя задача:
