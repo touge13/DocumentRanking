@@ -1,4 +1,5 @@
 У нас есть датасет для ранжирования intern_task.csv: 
+
 https://drive.google.com/file/d/1viFKqtYTtTiP9_EdBXVpCmWbNmxDiXWG/view?usp=sharing
 
 В нем есть query_id - айдишник поисковой сессии, фичи
