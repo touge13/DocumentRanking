@@ -6,12 +6,19 @@ from sklearn.metrics import ndcg_score
 from sklearn.preprocessing import StandardScaler
 
 # Загрузка данных
-df = pd.read_csv("smallDataset/intern_task_small.csv")
+df = pd.read_csv('smallDataset/intern_task_small.csv')
+
+# Идентификация и удаление выбросов
+# Например, использование межквартильного размаха (IQR) для определения выбросов
+Q1 = df.quantile(0.25)
+Q3 = df.quantile(0.75)
+IQR = Q3 - Q1
+df_clean = df[~((df < (Q1 - 1.5 * IQR)) | (df > (Q3 + 1.5 * IQR))).any(axis=1)]
 
 # Предобработка данных
 # Разделение данных на признаки (X) и целевую переменную (y)
-X = df.drop(columns=['rank', 'query_id'])
-y = df['rank']
+X = df_clean.drop(columns=['rank', 'query_id'])
+y = df_clean['rank']
 
 # Масштабирование признаков
 scaler = StandardScaler()
@@ -22,7 +29,6 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, 
 
 # Создание и обучение модели RandomForestRegressor
 rf_model = RandomForestRegressor(random_state=42)
-
 rf_model.fit(X_train, y_train)
 
 # Предсказание рангов на тестовом наборе
