@@ -2,6 +2,8 @@
 
 https://drive.google.com/file/d/1viFKqtYTtTiP9_EdBXVpCmWbNmxDiXWG/view?usp=sharing
 
+Скачайте csv файл и разместите в ../SessionRanker/intern_task.csv
+
 В нем есть query_id - айдишник поисковой сессии, фичи
 релевантности документа запросу, rank - оценка релевантности.
 Наша задача:

@@ -6,7 +6,7 @@ from sklearn.metrics import ndcg_score
 from sklearn.preprocessing import StandardScaler
 
 # Загрузка данных
-df = pd.read_csv("intern_task_small.csv")
+df = pd.read_csv("smallDataset/intern_task_small.csv")
 
 # Предобработка данных
 # Разделение данных на признаки (X) и целевую переменную (y)
