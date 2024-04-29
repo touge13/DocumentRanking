@@ -26,7 +26,7 @@ https://drive.google.com/file/d/1viFKqtYTtTiP9_EdBXVpCmWbNmxDiXWG/view?usp=shari
 Я создал отдельную папку smallDataset, в котором находится:
 
 - файл solutionSmall.ipynb абсолютно аналогичный файлу solution.ipynb (в ноутбуке solution.ipynb, в отличие от solutionSmall.ipynb, никаких выходных значений нет)
-- файл intern_task_small.csv, в котором хранятся первые 1000 записей файла intern_task.csv
+- файл intern_task_small.csv, в котором хранятся первые 1000 строк файла intern_task.csv
 - файл mainSmall.py, в котором содержится такое же решение, как и в solutionSmall.ipynb, только в обычном формате .py
 
 ## Шаги проекта
